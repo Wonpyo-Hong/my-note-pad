@@ -1,0 +1,140 @@
+/* Global styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: "Arial", sans-serif; /* Modern font */
+  background-color: #f0f0f0; /* Light grey background for a modern look */
+}
+
+/* Header styles */
+.header-container {
+  background-color: #ffffff; /* White for a clean look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  width: 100%;
+  height: 150px; /* Adjusted height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Added padding */
+}
+
+/* Sticky Footer styles */
+.footer-container {
+  position: fixed; /* Changed to fixed */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%;
+  height: 100px; /* Adjusted height */
+  background-color: #ffffff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Added padding */
+}
+
+/* Layout styles */
+body,
+html {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px; /* Make space for the footer */
+}
+
+/* Home Container & Scrollable Content */
+.home-container {
+  flex-grow: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px; /* Added padding for spacing */
+  align-items: stretch; /* Stretch children to match width */
+}
+
+/* Button styles */
+.make-post-btn {
+  background-color: #007bff; /* Bootstrap primary color for the button */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Adjusted padding for better appearance */
+  cursor: pointer; /* Cursor pointer on hover */
+  align-self: flex-end; /* Align to the right side */
+  margin: 10px 0; /* Adjusted margin */
+}
+
+/* Form and Input Styles */
+form {
+  width: 100%;
+  max-width: 500px; /* Max width for form */
+  padding: 20px; /* Added padding */
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Rounded corners for the form */
+  margin-top: 20px; /* Space above the form */
+}
+
+input[name="title"],
+textarea[name="content"] {
+  width: calc(100% - 40px); /* Adjust width to fit form padding */
+  padding: 10px; /* Added padding for inputs */
+  margin-top: 10px;
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+button[type="submit"] {
+  background-color: #28a745; /* Bootstrap success color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px; /* Space above button */
+  cursor: pointer;
+}
+
+/* Button styles */
+button {
+  background-color: #007bff; /* Bootstrap primary color for buttons */
+  color: white;
+  border: none;
+  border-radius: 0.25rem; /* Rounded corners */
+  padding: 0.5rem 1rem; /* Padding */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Cursor pointer on hover */
+  transition: background-color 0.2s, transform 0.2s; /* Transition for hover effects */
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade for hover state */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); /* Custom focus shadow to match button color */
+}
+
+/* Posts Container & Individual Post Styles */
+.posts-container {
+  width: 100%;
+  max-width: 800px; /* Max width for posts */
+  margin: 20px auto; /* Center aligning */
+  padding-bottom: 100px; /* Add padding to bottom to ensure space below the last post */
+}
+
+.post {
+  border: 1px solid #ddd; /* Add border to each post */
+  padding: 15px; /* Add padding inside the posts */
+  margin-bottom: 10px; /* Add margin between posts */
+  width: 100%;
+  max-width: 800px; /* Max width for posts */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+  border-radius: 5px; /* Optional: Rounded corners for a softer look */
+}
